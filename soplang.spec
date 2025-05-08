@@ -1,3 +1,4 @@
+import platform
 # -*- mode: python ; coding: utf-8 -*-
 
 import os
@@ -5,7 +6,7 @@ import platform
 block_cipher = None
 
 # Icon file path - ensure it exists
-icon_file = os.path.join('windows', 'soplang_icon.ico')
+icon_file = os.path.join('macos', 'soplang_icon.icns') if platform.system() == 'Darwin' else os.path.join('windows', 'soplang_icon.ico')
 if not os.path.exists(icon_file):
     print(f"Warning: Icon file {icon_file} not found. The executable will use a default icon.")
     icon_file = None

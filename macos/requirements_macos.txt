@@ -1,5 +1,5 @@
 # Core dependencies for macOS
-readline>=8.0
+# readline>=8.0  not needed for macOS
 pyinstaller>=6.0.0
 colorama>=0.4.4
 

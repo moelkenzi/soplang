@@ -3,7 +3,7 @@ colorama>=0.4.0
 prompt_toolkit>=3.0.0
 
 # Optional dependencies - installed conditionally based on platform
-# readline>=8.0 # Not compatible with Windows, installed automatically on Unix systems
+# readline>=8.0 # Not compatible with Windows & Optional on macOS, installed automatically on Unix systems
 
 # Development dependencies
 pytest>=7.0.0

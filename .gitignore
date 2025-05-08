@@ -54,7 +54,8 @@ env/
 *.swo
 
 # Soplang specific
-.soplang_history 
+.soplang_history
+soplang.spec.bak
 
 # macOS
 .DS_Store

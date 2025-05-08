@@ -36,6 +36,7 @@ if [ ! -f "macos/soplang_icon.icns" ]; then
     echo -e "${YELLOW}  Option 1: Run 'cd macos && ./prepare_logos.sh'${NC}"
     echo -e "${YELLOW}  Option 2: Manually place an icon file at 'macos/soplang_icon.icns'${NC}"
 
+    echo -e "${CYAN}NOTE: Run './generate_icons.sh' to generate Soplang icons for the app${NC}"
     read -p "Do you want to continue without an icon? (y/n) " -n 1 -r
     echo    # Move to a new line
     if [[ ! $REPLY =~ ^[Yy]$ ]]; then
@@ -173,7 +174,6 @@ if command -v create-dmg &> /dev/null; then
     # Create the DMG
     create-dmg \
         --volname "Soplang Installer" \
-        --volicon "macos/soplang_icon.icns" \
         --window-pos 200 120 \
         --window-size 800 400 \
         --icon-size 100 \
